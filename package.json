@@ -1,0 +1,33 @@
+{
+  "name": "cypress-cucumber",
+  "version": "1.0.0",
+  "description": "cucumber and cypress test",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress open"
+  },
+  "keywords": [
+    "cypress",
+    "cnpm",
+    "WARN",
+    "init",
+    "canceled"
+  ],
+  "author": "mahbub",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^9.4.1",
+    "cypress-cucumber-preprocessor": "^4.3.1",
+    "cypress-xpath": "^1.6.2",
+    "mochawesome": "^7.1.2"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true
+  },
+  "dependencies": {
+    "faker": "^5.5.3",
+    "mocha": "^9.2.1",
+    "mochawesome-merge": "^4.2.1",
+    "mochawesome-report-generator": "^6.1.1"
+  }
+}

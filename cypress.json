@@ -2,12 +2,16 @@
      "baseUrl": "https://partnerforsqa.dev.uniteliving.com/login",
      "chromeWebSecurity": false,
      "testFiles": "**/*.feature",
-     "reporter": "mochawesome",
+     "screenshotsFolder": "cypress/reports/mochareports/assets",
+     "reporter": "cypress-multi-reporters",
      "reporterOptions": {
-         "reportDir": "cypress/report/mochawesome-report",
-         "overwrite": true,
-         "html": true,
-         "json": false,
-         "timestamp": "mmddyyyy_HHMMss"
+         "reporterEnabled": "mochawesome",
+         "mochawesomeReporterOptions": {
+             "reportDir": "cypress/reports/mocha",
+             "quite": true,
+             "overwrite": false,
+             "html": false,
+             "json": true
+         }
      }
  }
